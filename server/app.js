@@ -6,7 +6,9 @@ const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const cartRoutes = require("./routes/cartRoutes");
 const userToken = require("./routes/userTokenRoute")
+const dotenv = require("dotenv");
 
+dotenv.config();
 const app = express();
 
 app.use(cors());
